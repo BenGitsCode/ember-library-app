@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
+  emailAddress: '',
 
-  isDisables: true
+  isDisabled: Ember.computed.empty('emailAddress')
 });
