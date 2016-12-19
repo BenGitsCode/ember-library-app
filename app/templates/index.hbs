@@ -11,15 +11,11 @@
 
     </div>
     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3">
-        <button disabled={{isDisabled}} class="btn btn-primary btn-lg btn-block">Request invitation</button>
+        <button class="btn btn-primary btn-lg btn-block" disabled={{isDisabled}} {{action 'saveInvitation'}}>Request Invitation</button>
     </div>
   </div>
 
+
+
   <br/><br/>
 </div>
-
-
-{{!--
-TODO Show a response message after clicking on “Invite me” button.
-TODO Clear the input box after invitation has sent.
---}}
