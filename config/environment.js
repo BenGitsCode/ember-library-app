@@ -9,10 +9,10 @@ module.exports = function(environment) {
 
     firebase: {
       apiKey: 'AIzaSyBagMOTBWOZJZrIOW0vG9w9y_kX7aHtZU8',
-      authDomain: 'https://yoember-library-app-18b03.firebaseapp.com',
-      databaseURL: 'https://yoember-library-app-18b03.firebaseio.com/',
-      storageBucket: 'yoember-library-app-18b03.appspot.com',
-      messagingSenderID: '65745779849'
+      authDomain: 'yoember-library-app-18b03.firebaseapp.com',
+      databaseURL: 'https://yoember-library-app-18b03.firebaseio.com',
+      storageBucket: 'gs://yoember-library-app-18b03.appspot.com',
+      messagingSenderId: '65745779849'
     },
 
     // if using ember-cli-content-security-policy
@@ -26,6 +26,10 @@ module.exports = function(environment) {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
         // e.g. 'with-controller': true
+      },
+      EXTEND_PROTOTYPES: {
+        // Prevent Ember Data from overriding Date.parse.
+        Date: false
       }
     },
 
@@ -36,11 +40,11 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    //  ENV.APP.LOG_RESOLVER = true;
-     ENV.APP.LOG_ACTIVE_GENERATION = true;
-     ENV.APP.LOG_TRANSITIONS = true;
-     ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
-     ENV.APP.LOG_VIEW_LOOKUPS = true;
+    // ENV.APP.LOG_RESOLVER = true;
+    // ENV.APP.LOG_ACTIVE_GENERATION = true;
+    // ENV.APP.LOG_TRANSITIONS = true;
+    // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
+    // ENV.APP.LOG_VIEW_LOOKUPS = true;
   }
 
   if (environment === 'test') {
@@ -55,7 +59,9 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV['ember-faker'] = {
+      enabled: true
+    };
   }
 
   return ENV;
