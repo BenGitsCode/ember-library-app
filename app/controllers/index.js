@@ -20,7 +20,9 @@ export default Ember.Controller.extend({
         this.set('emailAddress', '');
       });
 
+      // TODO how do i log in console or show in ui this responseMessage?
+
+
     }
   }
-
 });
