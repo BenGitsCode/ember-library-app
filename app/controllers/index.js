@@ -21,8 +21,6 @@ export default Ember.Controller.extend({
       });
 
       // TODO how do i log in console or show in ui this responseMessage?
-
-
-    }
+    },
   }
 });
