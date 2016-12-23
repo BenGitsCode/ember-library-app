@@ -9,8 +9,8 @@ module.exports = function(environment) {
 
     firebase: {
       apiKey: 'AIzaSyBagMOTBWOZJZrIOW0vG9w9y_kX7aHtZU8',
-      authDomain: 'yoember-library-app-18b03.firebaseapp.com',
-      databaseURL: 'https://yoember-library-app-18b03.firebaseio.com',
+      authDomain: 'https://yoember-library-app-18b03.firebaseapp.com',
+      databaseURL: 'https://yoember-library-app-18b03.firebaseio.com/',
       storageBucket: 'yoember-library-app-18b03.appspot.com',
       messagingSenderID: '65745779849'
     },
