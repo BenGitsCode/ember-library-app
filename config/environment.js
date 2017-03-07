@@ -4,7 +4,7 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'library-app',
     environment: environment,
-    rootURL: '/',
+    rootURL: '/yoember-library-app',
     locationType: 'auto',
 
     firebase: {
