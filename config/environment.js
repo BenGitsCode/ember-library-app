@@ -62,6 +62,9 @@ module.exports = function(environment) {
     ENV['ember-faker'] = {
       enabled: true
     };
+    ENV.rootURL = '/yoember-library-app';
+    ENV.locationType = 'hash';
+    ENV.apiHost = 'https://yoember-library-app-18b03.firebaseio.com';
   }
 
   return ENV;
